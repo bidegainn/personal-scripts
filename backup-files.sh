@@ -1,5 +1,7 @@
 #!/bin/bash
 # File Backup
+#github: github.com/bidegiann
+#web: bidegain.com.ar
 
 ############################
 ##     INSTRUCCIONES      ##
@@ -11,9 +13,9 @@
 USERNAME="$(whoami)"
 NAME_OF_BK="Backup_$(date +%Y%m%d).tar.bz2"-$USERNAME
 
-read -p "Introduce la carpeta: " FOLDER
+read -p "Enter the name of the folder you want to make backup: " FOLDER
 
 tar -cvf $NAME_OF_BK.tar $FOLDER
 
 
-echo "El archivo se comprimio correctamente, se puede encontrar con el nombre", $NAME_OF_BK
+echo "The file was successfully compressed, you can find it with the name", $NAME_OF_BK
